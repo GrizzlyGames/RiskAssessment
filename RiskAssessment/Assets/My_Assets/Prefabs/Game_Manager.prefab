@@ -1,0 +1,383 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1489050999729838}
+  m_IsPrefabParent: 1
+--- !u!1 &1489050999729838
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4982787140094074}
+  - component: {fileID: 114141769293561358}
+  m_Layer: 0
+  m_Name: Game_Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4982787140094074
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1489050999729838}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114141769293561358
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1489050999729838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbdb14c9a7bd8c943a3e34e6ace7555f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questions:
+  - categoryName: User Profile
+    maxNumPoints: 100
+    currentNumPoints: 0
+    questions: Your age?
+    questionNum: 1
+    answers:
+    - 0-15yrs.
+    - 14-35 yrs.
+    - 36-60 yrs.
+    - 61 plus
+    implication:
+    - Girls under age 16 should have friends that are boys, but not serious boyfriends.
+    - 'Woman 15-35 at highest risk to become involved in an abusive relationship. '
+    - 'Hopefully you''re in a stable loving relationship. No violence by now, not
+      likely to start. If you are "back on the market" after a divorce, take your
+      time. '
+    - Healthy mature adults at low risk of partner abuse.  Watch for health problems,
+      dimensia and terminal illness.
+    points: 0a0000003c0000000a00000014000000
+  - categoryName: User Profile
+    maxNumPoints: 100
+    currentNumPoints: 0
+    questions: Your children?
+    questionNum: 2
+    answers:
+    - I don't have any kids
+    - We have have child(ren)
+    - I have child(ren) from a previous relationship
+    - My children are adults now
+    implication:
+    - 'No kids? Means your free to stay or go as you chose. Don''t be fooled into
+      thinking having children will fix '
+    - 'Lucky you. Children can create stress. Remember to take care of each other
+      too. '
+    - Lucky you. Remember to look after each other too. Watch for partner being jealous
+      of the kids, playing favourites etc..
+    - Adult children can be a great resource. Include them in your new relationship,
+      and listen to them.
+    points: 000000002800000050000000ecffffff
+  - categoryName: User Profile
+    maxNumPoints: 100
+    currentNumPoints: 0
+    questions: Financially, I am ...
+    questionNum: 3
+    answers:
+    - Independent
+    - Dependent on him
+    - On social assistance
+    - He is dependent on me
+    implication:
+    - Good! Having your own money gives you options.
+    - Money is power. You need some of "your" money. You need to know what he is doing
+      with his.
+    - 'Can be hard, but at least you''re not dependent on him. Being on Social Assistance
+      limits your options, especially housing.   '
+    - 'Great! Men can find it hard on the ego. Find other ways to let him "be a man". '
+    points: 000000000f000000230000002d000000
+  - categoryName: User Profile
+    maxNumPoints: 100
+    currentNumPoints: 0
+    questions: I am seeing?
+    questionNum: 4
+    answers:
+    - Nobody at the moment.
+    - One good man is all I need.
+    - Exploring my options /  seeing more than one man.
+    - I'm seeing 3 or more men at any one time.
+    implication:
+    - Good for you. If you can be happy with yourself, you will be more selective
+      about which man you let into your life.
+    - Lucky you. Hopefully the "Creep Meter" will confirm that he is worthy of your
+      love and attention.
+    - 'It''s time to pick one or neither. Jealous of a rival is the oldest reason
+      in the book for a man to abuse a woman. '
+    - Men can't share. Jealousy leads to violence. More men, more risk of violence.
+      Stop it!
+    points: 000000000f000000230000002d000000
+  - categoryName: Boyfriend Profile
+    maxNumPoints: 100
+    currentNumPoints: 0
+    questions: Your partner's age is
+    questionNum: 1
+    answers:
+    - Within 5 years of my age
+    - More than 10 years older
+    - More than 10 years younger
+    - I don't know
+    implication:
+    - As it should be. Big gap in age = power differential. Abuse is about power.
+    - A big gap in age can be exploited by an abusive partner
+    - 'He''ll break you heart when he finds someone closer to his age. Don''t fall
+      into the trap of being his lover and his mother. '
+    - Some people lie about their age. Find out his true age.
+    points: 00000000280000002800000014000000
+  - categoryName: Boyfriend Profile
+    maxNumPoints: 100
+    currentNumPoints: 0
+    questions: My boyfriend...
+    questionNum: 2
+    answers:
+    - Has his own place
+    - Lives with me
+    - In Jail/Prison
+    - Shelter/Homeless
+    implication:
+    - 'As it should be. Make him earn a place. When you''re ready, live at his house
+      on a trial basis. It''s easier to leave than kick him out. '
+    - 'As it should be - if your married or he''s earned a place in your home. Don''t
+      rush in together. Proximity creates more opportunity for things to turn abusive. '
+    - ??????????????????????????????????????????????
+    - Really? Why are you waisting your time on someone who can't support themself?
+      Do you want a partner, or a project?
+    points: 0000000014000000320000001e000000
+  - categoryName: Boyfriend Profile
+    maxNumPoints: 100
+    currentNumPoints: 0
+    questions: Our relationship status?
+    questionNum: 3
+    answers: []
+    implication: []
+    points: 
+  - categoryName: 
+    maxNumPoints: 0
+    currentNumPoints: 0
+    questions: 
+    questionNum: 0
+    answers: []
+    implication: []
+    points: 
+  - categoryName: 
+    maxNumPoints: 0
+    currentNumPoints: 0
+    questions: 
+    questionNum: 0
+    answers: []
+    implication: []
+    points: 
+  - categoryName: 
+    maxNumPoints: 0
+    currentNumPoints: 0
+    questions: 
+    questionNum: 0
+    answers: []
+    implication: []
+    points: 
+  - categoryName: 
+    maxNumPoints: 0
+    currentNumPoints: 0
+    questions: 
+    questionNum: 0
+    answers:
+    - 
+    - 
+    - 
+    - 
+    implication:
+    - 
+    - 
+    - 
+    - 
+    points: 00000000000000000000000000000000
+  - categoryName: 
+    maxNumPoints: 0
+    currentNumPoints: 0
+    questions: 
+    questionNum: 0
+    answers: []
+    implication: []
+    points: 
+  - categoryName: 
+    maxNumPoints: 0
+    currentNumPoints: 0
+    questions: 
+    questionNum: 0
+    answers: []
+    implication: []
+    points: 
+  - categoryName: 
+    maxNumPoints: 0
+    currentNumPoints: 0
+    questions: 
+    questionNum: 0
+    answers: []
+    implication: []
+    points: 
+  - categoryName: 
+    maxNumPoints: 0
+    currentNumPoints: 0
+    questions: 
+    questionNum: 0
+    answers: []
+    implication: []
+    points: 
+  - categoryName: 
+    maxNumPoints: 0
+    currentNumPoints: 0
+    questions: 
+    questionNum: 0
+    answers: []
+    implication: []
+    points: 
+  - categoryName: 
+    maxNumPoints: 0
+    currentNumPoints: 0
+    questions: 
+    questionNum: 0
+    answers: []
+    implication: []
+    points: 
+  - categoryName: 
+    maxNumPoints: 0
+    currentNumPoints: 0
+    questions: 
+    questionNum: 0
+    answers: []
+    implication: []
+    points: 
+  - categoryName: 
+    maxNumPoints: 0
+    currentNumPoints: 0
+    questions: 
+    questionNum: 0
+    answers: []
+    implication: []
+    points: 
+  - categoryName: 
+    maxNumPoints: 0
+    currentNumPoints: 0
+    questions: 
+    questionNum: 0
+    answers: []
+    implication: []
+    points: 
+  - categoryName: 
+    maxNumPoints: 0
+    currentNumPoints: 0
+    questions: 
+    questionNum: 0
+    answers: []
+    implication: []
+    points: 
+  - categoryName: 
+    maxNumPoints: 0
+    currentNumPoints: 0
+    questions: 
+    questionNum: 0
+    answers: []
+    implication: []
+    points: 
+  - categoryName: 
+    maxNumPoints: 0
+    currentNumPoints: 0
+    questions: 
+    questionNum: 0
+    answers: []
+    implication: []
+    points: 
+  - categoryName: 
+    maxNumPoints: 0
+    currentNumPoints: 0
+    questions: 
+    questionNum: 0
+    answers: []
+    implication: []
+    points: 
+  - categoryName: 
+    maxNumPoints: 0
+    currentNumPoints: 0
+    questions: 
+    questionNum: 0
+    answers: []
+    implication: []
+    points: 
+  - categoryName: 
+    maxNumPoints: 0
+    currentNumPoints: 0
+    questions: 
+    questionNum: 0
+    answers: []
+    implication: []
+    points: 
+  - categoryName: 
+    maxNumPoints: 0
+    currentNumPoints: 0
+    questions: 
+    questionNum: 0
+    answers: []
+    implication: []
+    points: 
+  - categoryName: 
+    maxNumPoints: 0
+    currentNumPoints: 0
+    questions: 
+    questionNum: 0
+    answers: []
+    implication: []
+    points: 
+  - categoryName: 
+    maxNumPoints: 0
+    currentNumPoints: 0
+    questions: 
+    questionNum: 0
+    answers: []
+    implication: []
+    points: 
+  - categoryName: 
+    maxNumPoints: 0
+    currentNumPoints: 0
+    questions: 
+    questionNum: 0
+    answers: []
+    implication: []
+    points: 
+  - categoryName: 
+    maxNumPoints: 0
+    currentNumPoints: 0
+    questions: 
+    questionNum: 0
+    answers: []
+    implication: []
+    points: 
+  - categoryName: 
+    maxNumPoints: 0
+    currentNumPoints: 0
+    questions: 
+    questionNum: 0
+    answers: []
+    implication: []
+    points: 
